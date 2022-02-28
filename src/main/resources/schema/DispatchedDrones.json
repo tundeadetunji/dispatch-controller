@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DispatchedDrones",
+    "type":"object",
+    "properties": {
+        "DroneSerial":{
+            "type":"string"
+        },
+        "DroneModel":{
+            "type":"string"
+        },
+        "DroneWeightLimit":{
+            "type":"integer"
+        },
+        "DroneBatteryCapacity":{
+            "type":"integer"
+        },
+        "DroneState":{
+            "type":"string"
+        },
+        "LoadID":{
+            "type":"string"
+        }
+    }
+
+}

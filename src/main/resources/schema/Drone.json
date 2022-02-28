@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Drone",
+    "type":"object",
+    "properties": {
+        "DroneSerial":{
+            "type":"string"
+        },
+        "DroneModel":{
+            "type":"string"
+        },
+        "DroneWeightLimit":{
+            "type":"integer"
+        },
+        "DroneBatteryCapacity":{
+            "type":"integer"
+        },
+        "DroneState":{
+            "type":"string"
+        }
+    }
+
+}

@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Medication",
+    "type":"object",
+    "properties": {
+        "MedicationName":{
+            "type":"string"
+        },
+        "MedicationWeight":{
+            "type":"integer"
+        },
+        "MedicationCode":{
+            "type":"string"
+        },
+        "MedicationImageURL":{
+            "type":"string"
+        }
+    }
+}
