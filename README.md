@@ -18,18 +18,23 @@ Java Coding Assignment
 
 
 
+
 ### Operations:
+
 
 To register a drone:
 POST
 http://localhost:8080/api/drones/new
 
 Sample request body:
+
 `{
     "DroneSerial":"DroneSerial",
     "DroneModel":"Heavyweight"
 }`
+
 Response:
+
 `{
     "headers": {},
     "body": {
@@ -44,17 +49,21 @@ Response:
 }`
 
 
+
 To load a drone:
 POST
 http://localhost:8080/api/drones/load
 
 Sample request body:
+
 `{
     "DroneSerial":"DRONE01",
     "MedicationCode":"MED01",
     "DroneId":1
 }`
+
 Response:
+
 `{
     "headers": {},
     "body": {
@@ -72,15 +81,19 @@ Response:
 }`
 
 
+
 To check medication items on a drone:
 GET
 http://localhost:8080/api/drones/check-load
 
 Sample request body:
+
 `{
     "DroneSerial":"DRONE01"
 }`
+
 Response:
+
 `{
     "headers": {},
     "body": [
@@ -100,11 +113,13 @@ Response:
 }`
 
 
+
 To check available drones for loading:
 GET
 http://localhost:8080/api/drones/check-available
 
 Sample response:
+
 `{
     "headers": {},
     "body": [
@@ -169,16 +184,19 @@ Sample response:
 }`
 
 
+
 To check battery level of given drone:
 GET
 http://localhost:8080/api/drones/check-battery
 
 Sample request body:
+
 `{
     "id":1
 }`
 
 Response:
+
 `{
     "headers": {},
     "body": {
