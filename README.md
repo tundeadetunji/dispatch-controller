@@ -2,23 +2,23 @@
 Java Coding Assignment
 
 
-##Overview:
+## Overview:
 
-###Major Technologies:
+### Major Technologies:
 
-..* Maven project WITH Spring Boot WITH Jersey (for JSON) WITH H2 (for in-memory database)
+* Maven project WITH Spring Boot WITH Jersey (for JSON) WITH H2 (for in-memory database)
 
-..* 10 Drones (serials DRONE01 through 10) with varying models are pre-populated in the database
+* 10 Drones (serials DRONE01 through 10) with varying models are pre-populated in the database
 
-..* 5 Medication items (codes MED01 through 5) with varying weights are pre-populated in the database
+* 5 Medication items (codes MED01 through 5) with varying weights are pre-populated in the database
 
-..* IDE used was IntelliJ Idea 2021.3.2 (Community Edition)
+* IDE used was IntelliJ Idea 2021.3.2 (Community Edition)
 
-..* Testing endpoints was with Postman
+* Testing endpoints was with Postman
 
 
 
-###Operations:
+### Operations:
 
 To register a drone:
 POST
@@ -194,12 +194,12 @@ Response:
 
 
 
-###Notes:
+### Notes:
 
-..* Battery Levels of all drones are logged every 30 seconds - you can check the database by following the URL:
+* Battery Levels of all drones are logged every 30 seconds - you can check the database by following the URL:
 http://localhost:8080/h2-console
-..* Username: sa
-..* Password:
-..* JDBC URL: jdbc:h2:mem:testdb
-..* Driver Class: org.h2.Driver
-..* (Please note that the password field should be blank - nothing)
+* Username: sa
+* Password:
+* JDBC URL: jdbc:h2:mem:testdb
+* Driver Class: org.h2.Driver
+* Please note that the password field should be blank - nothing
