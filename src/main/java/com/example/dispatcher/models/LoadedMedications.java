@@ -9,51 +9,59 @@ import static javax.persistence.GenerationType.IDENTITY;
 
 
 @Entity
-public class LoadedMedication {
+public class LoadedMedications {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Integer id;
 
     @Column(nullable = false)
-    private String MedicationCode = "";
+    private String MedicationCode;
 
     @Column(nullable = false)
     private String MedicationName = "";
 
     @Column(nullable = false)
-    private int MedicationWeight = 0;
+    private int MedicationWeight;
 
     @Column(nullable = false)
     private String MedicationImageURL = "";
 
     @Column(nullable = false)
-    private String DroneSerial = "";
+    private String DroneSerial;
 
     @Column(nullable = false)
-    private String LoadID = "";
+    private String DroneModel;
 
-    public LoadedMedication() {
+    @Column(nullable = false)
+    private String DroneState;
+
+    @Column(nullable = false)
+    private Integer DroneId;
+
+    public LoadedMedications() {
     }
 
-    public LoadedMedication(String medicationCode, String medicationName, int medicationWeight, String medicationImageURL, String droneSerial, String loadID) {
+    public LoadedMedications(String medicationCode, String medicationName, int medicationWeight, String medicationImageURL, String droneSerial, String droneModel, String droneState, int droneId){
         MedicationCode = medicationCode;
-        MedicationName = medicationName;
         MedicationWeight = medicationWeight;
-        MedicationImageURL = medicationImageURL;
         DroneSerial = droneSerial;
-        LoadID = loadID;
+        MedicationName = medicationName;
+        MedicationImageURL = medicationImageURL;
+        DroneModel = droneModel;
+        DroneState = droneState;
+        DroneId = droneId;
     }
 
     public String getMedicationCode() {
         return MedicationCode;
     }
 
-    public String getMedicationName() {
-        return MedicationName;
-    }
-
     public int getMedicationWeight() {
         return MedicationWeight;
+    }
+
+    public String getMedicationName() {
+        return MedicationName;
     }
 
     public String getMedicationImageURL() {
@@ -64,8 +72,15 @@ public class LoadedMedication {
         return DroneSerial;
     }
 
-    public String getLoadID() {
-        return LoadID;
+    public String getDroneModel() {
+        return DroneModel;
     }
 
+    public String getDroneState() {
+        return DroneState;
+    }
+
+    public Integer getDroneId() {
+        return DroneId;
+    }
 }

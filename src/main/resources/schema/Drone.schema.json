@@ -8,15 +8,6 @@
         },
         "DroneModel":{
             "type":"string"
-        },
-        "DroneWeightLimit":{
-            "type":"integer"
-        },
-        "DroneBatteryCapacity":{
-            "type":"integer"
-        },
-        "DroneState":{
-            "type":"string"
         }
     }
 

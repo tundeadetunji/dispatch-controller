@@ -3,22 +3,13 @@
     "title": "LoadedMedications",
     "type":"object",
     "properties": {
-        "MedicationName":{
-            "type":"string"
-        },
         "MedicationWeight":{
             "type":"integer"
         },
         "MedicationCode":{
             "type":"string"
         },
-        "MedicationImageURL":{
-            "type":"string"
-        },
         "DroneSerial":{
-            "type":"string"
-        },
-        "LoadID":{
             "type":"string"
         }
     }

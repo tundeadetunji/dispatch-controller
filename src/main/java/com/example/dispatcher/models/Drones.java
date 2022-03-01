@@ -8,39 +8,35 @@ import javax.persistence.Id;
 import static javax.persistence.GenerationType.IDENTITY;
 
 @Entity
-public class DispatchedDrones {
+public class Drones {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private Integer id;
 
     @Column(nullable = false)
-    private String DroneSerial = "";
+    private String DroneSerial;
 
     @Column(nullable = false)
-    private String DroneModel = "";
+    private String DroneModel;
 
     @Column(nullable = false)
-    private int DroneWeightLimit = 500;
+    private int DroneBatteryCapacity;
 
     @Column(nullable = false)
-    private int DroneBatteryCapacity = 100;
+    private String DroneState;
 
-    @Column(nullable = false)
-    private String DroneState = "IDLE";
-
-    @Column(nullable = false)
-    private String LoadID = "";
-
-    public DispatchedDrones() {
+    public Drones() {
     }
 
-    public DispatchedDrones(String droneSerial, String droneModel, int droneWeightLimit, int droneBatteryCapacity, String droneState, String loadID) {
+    public Drones(String droneSerial, String droneModel, int droneBatteryCapacity, String droneState) {
         DroneSerial = droneSerial;
         DroneModel = droneModel;
-        DroneWeightLimit = droneWeightLimit;
         DroneBatteryCapacity = droneBatteryCapacity;
         DroneState = droneState;
-        LoadID = loadID;
+    }
+
+    public Integer getId() {
+        return id;
     }
 
     public String getDroneSerial() {
@@ -51,10 +47,6 @@ public class DispatchedDrones {
         return DroneModel;
     }
 
-    public int getDroneWeightLimit() {
-        return DroneWeightLimit;
-    }
-
     public int getDroneBatteryCapacity() {
         return DroneBatteryCapacity;
     }
@@ -62,9 +54,4 @@ public class DispatchedDrones {
     public String getDroneState() {
         return DroneState;
     }
-
-    public String getLoadID() {
-        return LoadID;
-    }
-
 }

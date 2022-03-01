@@ -19,24 +19,16 @@ public class AvailableDrones {
     @Column(nullable = false)
     private String DroneModel;
 
-    @Column(nullable = false)
-    private int DroneWeightLimit;
-
-    @Column(nullable = false)
-    private int DroneBatteryCapacity;
-
-    @Column(nullable = false)
-    private String DroneState;
-
     public AvailableDrones() {
     }
 
-    public AvailableDrones(String droneSerial, String droneModel, int droneWeightLimit, int droneBatteryCapacity, String droneState) {
+    public AvailableDrones(String droneSerial, String droneModel) {
         DroneSerial = droneSerial;
         DroneModel = droneModel;
-        DroneWeightLimit = droneWeightLimit;
-        DroneBatteryCapacity = droneBatteryCapacity;
-        DroneState = droneState;
+    }
+
+    public Integer getId() {
+        return id;
     }
 
     public String getDroneSerial() {
@@ -47,15 +39,4 @@ public class AvailableDrones {
         return DroneModel;
     }
 
-    public int getDroneWeightLimit() {
-        return DroneWeightLimit;
-    }
-
-    public int getDroneBatteryCapacity() {
-        return DroneBatteryCapacity;
-    }
-
-    public String getDroneState() {
-        return DroneState;
-    }
 }
